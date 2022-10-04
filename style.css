@@ -1,0 +1,10 @@
+* {
+    font-family: 'Alkalami', serif;
+    background: lightslategrey;
+
+}
+h1 {
+     text-align: center;
+     font-size: 3em;
+     color: whitesmoke;
+}
