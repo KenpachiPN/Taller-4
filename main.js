@@ -1,25 +1,18 @@
 
-let estudiantes = Number(prompt("Ingrese la cantidad de estudiantes que calificarán la comida"));
-let suma = 0;
-let promedio;
-for(let i = 1; i <= estudiantes; i++){
-    let nom = prompt("Ingrese su nombre");
-    let calif = Number(prompt(nom + ", ingrese su calificación; 1 o 10"));
-    if(calif === 1 ) {
-        alert("La calificación de " + nom + " es horrible");
-        suma += calif;
+let meses = 20;
+let mes1 = 10;
+let mensual = 0;
+let total = 0;
+for(let i = 1; i <= meses; i++) {
+    if (i === 1) {
+        mensual = 10;
     }
-    else if (calif === 10) {
-        alert("La calificación de " + nom + " es excelente");
-        suma += calif;
+    else {
+        mensual *= 2;
+        alert("El total que deberá pagar en el mes " + i + " por el producto es de: $" +mensual);
     }
-    if (calif === 0 ) {
-        break;
-    }
-    promedio = suma / estudiantes;
 }
+    total += mensual;
+        alert("El total que pagó en los 20 meses es de: $" + total);
     
-    alert("El promedio de calificación de los estudiantes sobre la comida es de: " + promedio );
-    alert("Fueron encuestados " + estudiantes + " estudiantes");
-    alert("La nota más alta fue de: 10");
-    alert("La nota más baja fue de: 1");
+    
