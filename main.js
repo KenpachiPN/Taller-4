@@ -1,20 +1,24 @@
 
-let trabajadores = 5;
+let canNum = Number(prompt("Cuantos numeros desea ingresar"));
+let suma = 0;
+let resta = 0;
+let multi = 1;
+let divi = 1;
+let nums;
+for(let i1 = 1; i1 <= 5; i1++) {
+    for(let i = 1; i <= canNum; i++) {
+    nums = Number(prompt("Ingrese el # " + i )); 
+    suma += nums;
+    resta -= nums;
+    multi *= nums;
+    divi /= nums;
 
-for(let i = 1; i <= trabajadores; i++) {
-    let tiemposervicio = Number(prompt("Hola trabajador # " + i + ", ingrese el tiempo que lleva trabajando en esta empresa"));
-    if (tiemposervicio < 5) {
-        alert("Gracias por su responder de manera sincera, debido a que usted lleva con nostros " + tiemposervicio + " años, recibirá un aumento de 100 pesos en su salario");
-    }
-    else if (tiemposervicio >= 5 && tiemposervicio <= 9) {
-        alert("Gracias por su responder de manera sincera, debido a que usted lleva con nostros " + tiemposervicio + " años, recibirá un aumento de 250 pesos en su salario");
-    }
-    else if (tiemposervicio >= 10 && tiemposervicio <= 19) {
-        alert("Gracias por su responder de manera sincera, debido a que usted lleva con nostros " + tiemposervicio + " años, recibirá un aumento de 400 pesos en su salario");
-    }
-    else {
-        alert("Gracias por su responder de manera sincera, debido a que usted lleva con nostros " + tiemposervicio + " años, recibirá un aumento de 550 pesos en su salario");
-    }
+}
+alert("La suma de los números es: " + suma);
+alert("La resta de los números es: " + resta);
+alert("La multiplicación de los números es: " + multi);
+alert("La división de los números es: " + divi);
+
 }
 
 
