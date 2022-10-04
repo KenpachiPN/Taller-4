@@ -1,18 +1,29 @@
 
-let meses = 20;
-let mes1 = 10;
-let mensual = 0;
+let ventasdia = Number(prompt("Ingrese el número de ventas que hizo al día"));
+
+let monto1 = 0;
+let monto2 = 0;
+let monto3 = 0;
 let total = 0;
-for(let i = 1; i <= meses; i++) {
-    if (i === 1) {
-        mensual = 10;
+
+for(let i = 1; i <= ventasdia; i++) {
+    let montoventa = Number(prompt("Ingrese el monto de la venta # " + i));
+    if (montoventa > 1000) {
+        monto1 += montoventa;
+        alert("El monto vendido en la categoría > mil es de: $" + monto1 + " pesos");
     }
-    else {
-        mensual *= 2;
-        alert("El total que deberá pagar en el mes " + i + " por el producto es de: $" +mensual);
+    else if (montoventa <= 1000 && montoventa > 500) {
+        monto2 += montoventa;
+        alert("El monto vendido en la categoría > a 500 y menor a mil es de: $" + monto2 + " pesos");
     }
+    else if (montoventa <= 500) {
+        monto3 += montoventa;
+        alert("El monto vendido en la categoría < a 500: $" + monto3 + " pesos");
+    }
+    total += montoventa;
 }
-    total += mensual;
-        alert("El total que pagó en los 20 meses es de: $" + total);
-    
+    alert("El total de las ventas al día es de: $" + total + " pesos ");
+
+
+
     
