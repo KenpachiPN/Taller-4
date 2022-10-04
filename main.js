@@ -21,5 +21,5 @@ for(let i = 1; i <= estudiantes; i++){
     
     alert("El promedio de calificación de los estudiantes sobre la comida es de: " + promedio );
     alert("Fueron encuestados " + estudiantes + " estudiantes");
-    alert("La nota más alta fue de:  10 ");
-    alert("La nota más baja fue de:   1 ");
+    alert("La nota más alta fue de: 10");
+    alert("La nota más baja fue de: 1");
